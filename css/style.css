@@ -1,0 +1,312 @@
+body {
+    color: #eaeaea;
+    font-family: Arial, sans-serif, "Gill Sans MT";
+    background: url("../image/hero-background.jpg") no-repeat;
+    background-size: 100% 660px;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: #eaeaea;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    max-height: 660px;
+}
+
+
+.logo-container {
+    width: 100%;
+    padding: 15px 19px;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 65px;
+    box-sizing: border-box;
+
+}
+
+nav {
+    margin-right: 0;
+    text-align: right;
+}
+
+.burger-menu {
+    display: none;
+    width: 25px;
+}
+
+.nav-menu ul li {
+    display: inline-block;
+}
+
+.button {
+    text-transform: uppercase;
+    padding: 13px 43px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.red-button {
+    background-color: #ff6138;
+
+}
+
+.mint-button {
+    background-color: #00a388;
+}
+
+.text-header {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.nnn {
+    margin-top: 50px;
+}
+
+.text-header h1 {
+    font-size: 80px;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.text-header hr {
+    background-color: #687673;
+    margin: 0 5px 25px;
+}
+
+.text_with_tick {
+    display: flex;
+    align-items: center;
+    color: #f7fa9b;
+    margin-bottom: 15px;
+}
+
+.text_with_tick img {
+    margin-right: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 125px;
+}
+
+.cards img {
+    width: 31%;
+    border: 1px solid #687673;
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.social_networks {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.copyright p {
+    font-size: 11px;
+    color: black;
+    font-weight: bold;
+}
+
+.copyright img {
+    margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+    .text-header h1 {
+        width: 90%;
+    }
+
+    .copyright {
+        width: 35%;
+    }
+}
+
+@media (max-width: 883px) {
+    .text-header h1 {
+        width: 100%;
+    }
+}
+
+/*Tablet View*/
+@media (max-width: 800px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .burger-menu {
+        display: block;
+        float: right;
+    }
+
+    .nav-menu {
+        display: none;
+        margin-top: 5px;
+    }
+
+    .mobil-nav-button{
+        margin-top: 35px;
+    }
+
+    .nav-menu ul li {
+        display: block;
+        margin-top: 25px;
+    }
+
+    .logo img {
+        width: 83%;
+        height: 83%;
+    }
+
+    .text-header {
+        width: 100%;
+    }
+
+    .text-header h1 {
+        width: 90%;
+        font-size: 70px;
+
+    }
+
+    .cards img {
+        width: 47%;
+    }
+
+    .social_networks {
+        width: 47%;
+    }
+
+    .copyright {
+        width: 47%;
+    }
+
+    .copyright img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 690px) {
+    body {
+        background-size: 100% 620px;
+
+    }
+
+    .text-header h1 {
+        width: 100%;
+        font-size: 65px;
+    }
+
+}
+
+@media (max-width: 580px) {
+    body {
+        background-size: 100% 590px;
+    }
+
+    .logo-container {
+        margin-bottom: 45px;
+    }
+
+    .text-header h1 {
+        font-size: 55px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social_networks {
+        width: 100%;
+    }
+
+    .copyright {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .copyright img {
+        margin-top: 30px;
+    }
+
+    .text-header {
+        text-align: center;
+    }
+
+    .nav-menu ul li {
+        display: inline-block;
+        /*margin-top: 25px;*/
+    }
+
+}
+
+
+/*Mobile View*/
+@media (max-width: 400px) {
+
+    .text_with_tick img {
+        margin-right: 5px;
+        width: 25px;
+    }
+
+    .text_with_tick p {
+        font-size: 14px;
+    }
+
+    .text-header h1 {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    body {
+        background-size: 100% 526px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .mobil-hide {
+        display: none;
+    }
+
+    .cards img {
+        width: 100%;
+    }
+}
+
+
